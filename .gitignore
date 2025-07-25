@@ -65,7 +65,9 @@ artifacts/
 
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
-
+# Ignore development-specific app settings
+ILearnerAPI/appsettings.Development.json
+ILearnerAPI/appsettings.json
 # StyleCop
 StyleCopReport.xml
 
