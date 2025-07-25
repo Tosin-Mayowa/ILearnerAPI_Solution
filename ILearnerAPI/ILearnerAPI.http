@@ -1,0 +1,10 @@
+@ILearnerAPI_HostAddress = https://localhost:7252
+
+GET {{ILearnerAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{ILearnerAPI_HostAddress}}/api/courses/1
+
+###
