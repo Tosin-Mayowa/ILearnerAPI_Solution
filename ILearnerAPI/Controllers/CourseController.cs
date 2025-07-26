@@ -58,7 +58,7 @@ namespace ILearnerAPI.Controllers
         }
 
        
-        [HttpPut("{id}")]
+        [HttpPatch("{id}")]
         public async Task<IActionResult> UpdateCourse(int id, [FromBody] UpdateCourseDto courseDto)
         {
             if (id != courseDto.Id) 
