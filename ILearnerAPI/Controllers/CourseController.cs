@@ -61,10 +61,7 @@ namespace ILearnerAPI.Controllers
         [HttpPatch("{id}")]
         public async Task<IActionResult> UpdateCourse(int id, [FromBody] UpdateCourseDto courseDto)
         {
-            if (id != courseDto.Id) 
-            {
-                return BadRequest("ID mismatch.");
-            }
+          
 
             if (!ModelState.IsValid)
             {
