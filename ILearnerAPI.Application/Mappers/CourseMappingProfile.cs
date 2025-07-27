@@ -16,8 +16,12 @@ namespace ILearnerAPI.Application.Mappers
 
             CreateMap<CreateCourseDto, Course>();
             CreateMap<CreateCourseModuleDto, CourseModuleTab>();
-            CreateMap<UpdateCourseDto, Course>()
+           
+            CreateMap<UpdateCourseDto,Course>()
                  .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+            
+            CreateMap<UpdateCourseModuleDto,CourseModuleTab>()
+                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
         }
     }
 }

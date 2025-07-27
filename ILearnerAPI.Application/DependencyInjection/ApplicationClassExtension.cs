@@ -1,4 +1,5 @@
-﻿using ILearnerAPI.Application.Courses;
+﻿using ILearnerAPI.Application.CourseModule;
+using ILearnerAPI.Application.Courses;
 using ILearnerAPI.Application.Mappers;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -21,6 +22,7 @@ namespace ILearnerAPI.Application.ApplicationExtension
                
             });
             services.AddScoped<ICourseService,CourseService>();
+            services.AddScoped<ICourseModuleService,CourseModuleService>();
             return services;
         }
     }

@@ -9,8 +9,8 @@ namespace ILearnerAPI.Application.CourseModule.Dto
 {
     public class CourseModuleDto
     {
-       
 
+        public int Id { get; set; }
         public string Name { get; set; } = String.Empty;
 
         public List<string>? Topics { get; set; } = new();

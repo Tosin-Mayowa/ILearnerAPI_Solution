@@ -25,7 +25,7 @@ namespace ILearnerAPI.Application.Courses
         public async Task<IEnumerable<CoursesDto>> GetCourses()
         {
             var courses = await _courseRepository.GetAllCoursesAsync();
-            return _mapper.Map<IEnumerable<CoursesDto>>(courses); // Use AutoMapper for mapping
+            return _mapper.Map<IEnumerable<CoursesDto>>(courses); 
         }
 
         public async Task<CoursesDto?> GetCourseByIdAsync(int id)

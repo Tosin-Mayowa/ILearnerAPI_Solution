@@ -13,6 +13,7 @@ namespace ILearnerAPI.Infrastructure.ExtensionMethod.infrastructure
         public static IServiceCollection AddInfrastructureService(this IServiceCollection services,string connStr)
         {
             services.AddScoped<ICourseRepository,CourseRepository>();
+            services.AddScoped<ICourseModuleRepository,CourseModuleRepository>();
 
             services.AddDbContext<CoursesDbContext>(options =>
             {

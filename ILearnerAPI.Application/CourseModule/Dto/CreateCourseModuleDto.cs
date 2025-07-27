@@ -7,14 +7,14 @@ namespace ILearnerAPI.Application.CourseModule.Dto
     public class CreateCourseModuleDto
     {
 
-        public string? Name { get; set; }
+        public string Name { get; set; } = default!;
 
         public List<string>? Topics { get; set; } = new();
 
         public int CourseId { get; set; }
 
-        public decimal? ModulePrice { get; set; }
-        public string? Description { get; set; } 
+        public decimal ModulePrice { get; set; }
+        public string Description { get; set; } = default!;
         
     }
 }
