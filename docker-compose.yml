@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ilearnerapi:
+    image: ${DOCKER_REGISTRY-}ilearnerapi
+    build:
+      context: .
+      dockerfile: ILearnerAPI/Dockerfile
