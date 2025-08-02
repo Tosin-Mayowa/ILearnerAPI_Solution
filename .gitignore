@@ -365,3 +365,6 @@ FodyWeavers.xsd
 # Ignore development-specific app settings
 ILearnerAPI/appsettings.Development.json
 ILearnerAPI/appsettings.json
+
+# Ignore Docker Compose override files
+docker-compose.override.yml
